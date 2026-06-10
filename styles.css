@@ -1,0 +1,158 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f2eb;
+  --surface: #fffdfa;
+  --surface-soft: #f4ede5;
+  --text: #3b3c55;
+  --muted: #6a6c8a;
+  --accent: #a2b4ff;
+  --accent-dark: #7b89c4;
+  --border: #d8d0c8;
+  --shadow: 0 28px 60px rgba(96, 92, 105, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Baloo 2", cursive, system-ui, sans-serif;
+  background: radial-gradient(circle at top left, rgba(162, 180, 255, 0.18), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(123, 137, 196, 0.18), transparent 28%),
+    var(--bg);
+  color: var(--text);
+}
+
+.page-shell {
+  padding: 32px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 40px 32px;
+  background: linear-gradient(135deg, rgba(162, 180, 255, 0.15), rgba(255, 252, 250, 0.95));
+  border: 1px solid rgba(168, 174, 210, 0.35);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.hero .eyebrow {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: var(--accent-dark);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 4vw, 4.25rem);
+  line-height: 0.95;
+  color: #3b3c55;
+  font-family: "Patrick Hand", cursive;
+}
+
+.hero .subtitle {
+  margin: 16px 0 0;
+  font-size: 1.2rem;
+  max-width: 680px;
+  line-height: 1.8;
+  color: var(--muted);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.content-card {
+  margin-top: 28px;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.content-card h2,
+.content-card h3 {
+  margin: 0 0 14px;
+  font-family: "Patrick Hand", cursive;
+  color: var(--accent-dark);
+}
+
+.intro-block {
+  margin-bottom: 28px;
+}
+
+.intro-block p,
+.detail-panel p,
+.favorite-block li,
+.footer-note {
+  font-family: "Baloo 2", cursive;
+}
+
+.intro-block p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.detail-panel {
+  padding: 24px;
+  background: rgba(162, 180, 255, 0.08);
+  border: 1px solid rgba(162, 180, 255, 0.24);
+  border-radius: 24px;
+}
+
+.detail-panel h3 {
+  font-size: 1.4rem;
+}
+
+.detail-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.favorite-block {
+  margin-top: 28px;
+}
+
+.favorite-block ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.favorite-block li {
+  margin-bottom: 0.9rem;
+}
+
+.footer-note {
+  margin-top: 32px;
+  padding: 22px 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(216, 208, 200, 0.7);
+  color: var(--muted);
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 24px 16px;
+  }
+
+  .hero,
+  .content-card {
+    padding: 28px 20px;
+  }
+}
