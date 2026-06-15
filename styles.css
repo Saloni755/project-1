@@ -7,6 +7,10 @@
   --muted: #a8b4d2;
   --accent: #04101f;
   --accent-dark: #04101f;
+  --periwinkle: #C6C8FF;
+  --periwinkle-light: #ECEFFF;
+  --midnight-blue: #191970;
+  --text-dark: #04101f;
   --border: rgba(148, 166, 203, 0.18);
   --shadow: 0 28px 60px rgba(0, 0, 0, 0.5);
 }
@@ -83,6 +87,13 @@ body {
   margin-bottom: 28px;
 }
 
+.intro-block {
+  background: var(--periwinkle);
+  padding: 20px;
+  border-radius: 18px;
+  color: var(--text-dark);
+}
+
 .intro-block p,
 .detail-panel p,
 .favorite-block li,
@@ -127,6 +138,34 @@ body {
 
 .favorite-block {
   margin-top: 28px;
+}
+
+.favorite-block {
+  background: var(--periwinkle-light);
+  padding: 18px 20px;
+  border-radius: 18px;
+  color: var(--text-dark);
+}
+
+.favorite-block ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.favorite-block li {
+  margin-bottom: 0.9rem;
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.favorite-block li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: var(--midnight-blue);
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .favorite-block ul {
