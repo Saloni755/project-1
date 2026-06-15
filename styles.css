@@ -88,10 +88,30 @@ body {
 }
 
 .intro-block {
-  background: var(--periwinkle);
+  background: linear-gradient(135deg, rgba(198, 200, 255, 0.95), rgba(236, 239, 255, 0.95));
   padding: 20px;
   border-radius: 18px;
   color: var(--text-dark);
+  box-shadow: inset 0 0 0 1px rgba(148, 166, 203, 0.15);
+}
+
+.kawaii-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #4c4fe7;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.kawaii-title::before {
+  content: '✨';
+  font-size: 1.1rem;
+}
+
+.cute-note {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  color: #4b4cff;
 }
 
 .intro-block p,
@@ -141,42 +161,57 @@ body {
 }
 
 .favorite-block {
-  background: var(--periwinkle-light);
-  padding: 18px 20px;
-  border-radius: 18px;
+  background: radial-gradient(circle at top left, rgba(198, 200, 255, 0.95), transparent 42%),
+    linear-gradient(180deg, rgba(236, 239, 255, 0.98), rgba(208, 213, 255, 0.95));
+  padding: 22px 24px;
+  border-radius: 22px;
   color: var(--text-dark);
+  border: 1px solid rgba(107, 103, 212, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
 }
 
-.favorite-block ul {
-  margin: 0;
-  padding-left: 1.2rem;
-  list-style: none;
-}
-
-.favorite-block li {
-  margin-bottom: 0.9rem;
-  position: relative;
-  padding-left: 1.1rem;
-}
-
-.favorite-block li::before {
-  content: '★';
+.favorite-block::before,
+.favorite-block::after {
+  content: '😺';
   position: absolute;
-  left: 0;
-  color: var(--midnight-blue);
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 1.35rem;
+}
+
+.favorite-block {
+  position: relative;
+}
+
+.favorite-block::before {
+  top: -10px;
+  left: -10px;
+}
+
+.favorite-block::after {
+  bottom: -10px;
+  right: -10px;
 }
 
 .favorite-block ul {
   margin: 0;
-  padding-left: 1.2rem;
-  color: var(--text);
+  padding-left: 1.3rem;
+  list-style: none;
+  color: var(--text-dark);
   line-height: 1.8;
 }
 
 .favorite-block li {
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.95rem;
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.favorite-block li::before {
+  content: '☆';
+  position: absolute;
+  left: 0;
+  color: #5d52e8;
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .footer-note {
