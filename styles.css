@@ -80,7 +80,7 @@ body {
 .content-card h3 {
   margin: 0 0 14px;
   font-family: "Patrick Hand", cursive;
-  color: var(--accent-dark);
+  color: var(--periwinkle-light);
 }
 
 .intro-block {
@@ -99,12 +99,12 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: #4c4fe7;
+  color: var(--periwinkle-light);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .kawaii-title::before {
-  content: '✨';
+  content: '';
   font-size: 1.1rem;
 }
 
@@ -170,7 +170,7 @@ body {
 
 .favorite-block::before,
 .favorite-block::after {
-  content: '😺';
+  content: '';
   position: absolute;
   font-size: 1.35rem;
 }
