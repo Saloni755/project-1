@@ -125,7 +125,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: var(--periwinkle);
+  color: var(--periwinkle-light);
 }
 
 .cute-note {
