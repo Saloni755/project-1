@@ -35,6 +35,32 @@ body {
   margin: 0 auto;
 }
 
+.spotify-tab {
+  margin-bottom: 22px;
+  padding: 22px;
+  background: linear-gradient(135deg, rgba(4, 16, 31, 0.88), rgba(9, 24, 38, 0.92));
+  border: 1px solid rgba(148, 166, 203, 0.2);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.spotify-tab .cute-note {
+  margin-bottom: 16px;
+}
+
+.spotify-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.spotify-grid iframe {
+  width: 100%;
+  min-height: 152px;
+  border: 0;
+  border-radius: 14px;
+}
+
 .hero {
   padding: 40px 32px;
   background: linear-gradient(135deg, rgba(4, 16, 31, 0.85), rgba(9, 24, 38, 0.95));
