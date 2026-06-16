@@ -10,7 +10,7 @@
   --periwinkle: #C6C8FF;
   --periwinkle-light: #ECEFFF;
   --midnight-blue: #191970;
-  --text-dark: #04101f;
+  --text-dark: #ffffff;
   --border: rgba(148, 166, 203, 0.18);
   --shadow: 0 28px 60px rgba(0, 0, 0, 0.5);
 }
@@ -99,13 +99,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: var(--periwinkle-light);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
-}
-
-.kawaii-title::before {
-  content: '';
-  font-size: 1.1rem;
+  color: var(--periwinkle);
 }
 
 .cute-note {
@@ -200,16 +194,9 @@ body {
 .favorite-block li {
   margin-bottom: 0.95rem;
   position: relative;
-  padding-left: 1.4rem;
-}
-
-.favorite-block li::before {
-  content: '☆';
-  position: absolute;
-  left: 0;
-  color: #5d52e8;
-  font-size: 1.1rem;
-  line-height: 1;
+  padding-left: 0;
+  list-style: disc inside;
+  color: #ffffff;
 }
 
 .footer-note {
