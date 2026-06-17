@@ -10,6 +10,7 @@
   --periwinkle: #C6C8FF;
   --periwinkle-light: #CFD6FF;
   --midnight-blue: #191970;
+  --midnight-blue-light: #2d2d8d;
   --text-dark: #ffffff;
   --border: rgba(148, 166, 203, 0.18);
   --shadow: 0 28px 60px rgba(0, 0, 0, 0.5);
@@ -54,29 +55,31 @@ body {
 
 .section-nav {
   margin-bottom: 22px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
 }
 
 .section-nav a {
   display: inline-flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 11px 16px;
   border-radius: 999px;
-  border: 1px solid rgba(148, 166, 203, 0.25);
-  background: linear-gradient(135deg, rgba(12, 31, 60, 0.9), rgba(4, 16, 31, 0.9));
+  border: 1px solid rgba(207, 214, 255, 0.35);
+  background: linear-gradient(135deg, #3737a3, var(--midnight-blue-light));
   color: var(--periwinkle-light);
   text-decoration: none;
   font-weight: 500;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .section-nav a:hover,
 .section-nav a:focus-visible {
   transform: translateY(-2px);
-  border-color: rgba(198, 200, 255, 0.55);
+  border-color: rgba(207, 214, 255, 0.65);
+  background: linear-gradient(135deg, #4343b0, #33339a);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
